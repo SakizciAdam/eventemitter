@@ -10,19 +10,26 @@ go get https://github.com/SakizciAdam/eventemitter
 ## Usage
 
 ```go
+package main
+
 import (
-"github.com/SakizciAdam/eventemitter"
-"fmt")
+	"fmt"
 
-bus:=eventemitter.New()
+	"github.com/SakizciAdam/eventemitter"
+)
 
-testListener:= func(args ...interface{}) {
-    fmt.Println(args[0])
+func main() {
+	bus := eventemitter.New()
+
+	testListener := func(args ...interface{}) {
+		fmt.Println(args[0])
+	}
+
+	bus.AddListener("test", testListener)
+
+	bus.Emit("test", "Hellooo world")
 }
 
-bus.AddListener("test",testListener)
-
-bus.Emit("test","Hellooo world")
 ```
 
 ## Contributing
