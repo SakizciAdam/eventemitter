@@ -12,7 +12,7 @@ go get https://github.com/SakizciAdam/eventemitter
 ```go
 import (
 "github.com/SakizciAdam/eventemitter"
-"fmt"
+"fmt")
 
 bus:=eventemitter.New()
 
