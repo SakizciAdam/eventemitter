@@ -29,7 +29,7 @@ func main() {
 
 	bus.AddListener("test", testListener)
 
-	bus.Emit("test", "Hellooo world")
+	bus.EmitSync("test", "Hellooo world")
 }
 
 ```
