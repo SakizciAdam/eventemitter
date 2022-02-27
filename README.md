@@ -2,6 +2,8 @@
 
 Event Emitter is  lightweight Go package that implements a simple Event Bus.
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/SakizciAdam/eventemitter.svg)](https://pkg.go.dev/github.com/SakizciAdam/eventemitter)
+
 ## Installation
 
 ```bash
